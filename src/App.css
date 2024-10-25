@@ -1,0 +1,36 @@
+*{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.EmailBlock {
+  display: flex;
+  align-items: flex-start; 
+  background-color: #F4F5F9;
+  padding: 10px; 
+  border: solid #CFD2DC 2px;
+  border-radius: 5px;
+  color: #636363;
+  margin-top: 10px;
+}
+
+.circle {
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%;
+  background-color: #E54065; 
+  color: white; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px; 
+  font-size: 20px; 
+}
+
+.EmailDetail {
+  display: flex; 
+  flex-direction: column; 
+}
+.EmailDetail p {
+  margin: 0; 
+  line-height: 1.2; 
+}
