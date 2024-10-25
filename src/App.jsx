@@ -4,6 +4,7 @@ import Email from './Email'
 import React, { useEffect, useState } from 'react';
 import useCustomReactQuery from './getApi'
 import axios from 'axios';
+import DOMPurify from 'dompurify';
 
 function App() {
   const [hidden, setHiddden] = useState(true);
@@ -132,8 +133,13 @@ setFilteredProduct(product?.list)
 
               </div>
               <p>{formatDateTime(filteredEmails[0]?.date)}</p>
-
-              <div>{productData.body}</div>
+              {productData.body ? (
+        <div
+          dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(productData.body) }}
+        />
+      ) : (
+        <p>No content available</p>
+      )}
             </div>
           </div>
         )

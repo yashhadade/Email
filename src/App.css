@@ -96,7 +96,7 @@ h1{
   cursor: pointer;
 }
 .filterBy{
-  background-color: none;
+  background-color: transparent;
   border: none;
 }
 .filterBy:hover{
